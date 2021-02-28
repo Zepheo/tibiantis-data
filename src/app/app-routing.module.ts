@@ -1,10 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { MonsterValuesComponent } from './monster-values/monster-values.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path: 'monster-values', component: MonsterValuesComponent },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

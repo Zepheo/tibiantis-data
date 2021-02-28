@@ -1,0 +1,20 @@
+<div class="side-bar">
+  <form class="monster-search">
+    <mat-form-field class="search">
+      <mat-label>Search for a monster</mat-label>
+      <input
+        matInput
+        name="search"
+        placeholder="Ex. dragon"
+        [(ngModel)]="search"
+      />
+    </mat-form-field>
+  </form>
+  <div class="monsters">
+    <ng-container *ngFor="let monster of monsters | MonsterFilter: search">
+      <button mat-raised-button (click)="setSelectedMonster(monster.name)">
+        {{ monster.name }}
+      </button>
+    </ng-container>
+  </div>
+</div>

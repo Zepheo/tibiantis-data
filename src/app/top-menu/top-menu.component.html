@@ -1,0 +1,5 @@
+<mat-toolbar color="primary">
+  <ng-container *ngFor="let link of navLinks">
+    <a mat-button [href]="link.path">{{ link.title }}</a>
+  </ng-container>
+</mat-toolbar>
