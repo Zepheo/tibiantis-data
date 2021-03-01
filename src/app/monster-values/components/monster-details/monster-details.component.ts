@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { MatCheckboxChange } from '@angular/material/checkbox';
 import { LootTableItem } from 'src/types/lootTable';
 import { Monster } from 'src/types/monster';
 
@@ -17,12 +18,15 @@ export class MonsterDetailsComponent {
     'amount',
     'dropChance',
     'vendors',
+    'exclude',
   ];
 
   get averageValue(): string {
-    const averageValueForItems: number[] = this.loot.map((i) => {
-      return ((1 + i.amount) / 2) * i.sell.value * i.dropChance;
-    });
+    const averageValueForItems: number[] = this.loot
+      .filter((i) => !i.exclude)
+      .map((i) => {
+        return ((1 + i.amount) / 2) * i.sell.value * i.dropChance;
+      });
     return averageValueForItems.reduce((a, b) => a + b).toFixed(3);
   }
 
@@ -34,4 +38,9 @@ export class MonsterDetailsComponent {
   }
 
   constructor() {}
+
+  toggleExcluded(event: MatCheckboxChange, item: LootTableItem) {
+    const itemIndex = this.loot.findIndex((i) => i == item);
+    this.loot[itemIndex].exclude = event.checked;
+  }
 }

@@ -48,6 +48,7 @@ export class MonsterValuesComponent {
         name: this.itemService.getItemName(item.id),
         dropChance: item.chance / 1000,
         amount: item.amount,
+        exclude: false,
       }));
     }
   }

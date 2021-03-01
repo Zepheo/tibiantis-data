@@ -13,6 +13,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatTableModule } from '@angular/material/table';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 import { TopMenuComponent } from './top-menu/top-menu.component';
 import { MonsterValuesComponent } from './monster-values/monster-values.component';
@@ -42,6 +43,7 @@ import { MonsterValuesSettingsComponent } from './monster-values/components/mons
     MatTableModule,
     MatIconModule,
     MatDialogModule,
+    MatCheckboxModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
