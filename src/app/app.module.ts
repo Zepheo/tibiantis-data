@@ -10,9 +10,15 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatListModule } from '@angular/material/list';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { MatTableModule } from '@angular/material/table';
+import { MatIconModule } from '@angular/material/icon';
+import { MatDialogModule } from '@angular/material/dialog';
+
 import { TopMenuComponent } from './top-menu/top-menu.component';
 import { MonsterValuesComponent } from './monster-values/monster-values.component';
 import { MonsterFilterPipe } from './pipes/monster-filter.pipe';
+import { MonsterDetailsComponent } from './monster-values/components/monster-details/monster-details.component';
+import { MonsterValuesSettingsComponent } from './monster-values/components/monster-values-settings/monster-values-settings.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +26,8 @@ import { MonsterFilterPipe } from './pipes/monster-filter.pipe';
     TopMenuComponent,
     MonsterValuesComponent,
     MonsterFilterPipe,
+    MonsterDetailsComponent,
+    MonsterValuesSettingsComponent,
   ],
   imports: [
     BrowserModule,
@@ -31,6 +39,9 @@ import { MonsterFilterPipe } from './pipes/monster-filter.pipe';
     MatListModule,
     MatFormFieldModule,
     MatInputModule,
+    MatTableModule,
+    MatIconModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,0 +1,33 @@
+<p>Name: {{ monster.name }}</p>
+<p>Experience: {{ monster.exp }}</p>
+<p>Hitpoints: {{ hitpoints }}</p>
+<p *ngIf="monster.summonCost > 0">
+  Mana cost to summon: {{ monster.summonCost }}
+</p>
+<p>Average Value: {{ averageValue }}</p>
+<div>
+  <table mat-table [dataSource]="loot">
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef>Name</th>
+      <td mat-cell *matCellDef="let item">{{ item.name }}</td>
+    </ng-container>
+    <ng-container matColumnDef="value">
+      <th mat-header-cell *matHeaderCellDef>Value</th>
+      <td mat-cell *matCellDef="let item">{{ item.sell.value }}</td>
+    </ng-container>
+    <ng-container matColumnDef="dropChance">
+      <th mat-header-cell *matHeaderCellDef>Drop chance</th>
+      <td mat-cell *matCellDef="let item">{{ item.dropChance * 100 }}%</td>
+    </ng-container>
+    <ng-container matColumnDef="amount">
+      <th mat-header-cell *matHeaderCellDef>Amount</th>
+      <td mat-cell *matCellDef="let item">{{ item.amount }}</td>
+    </ng-container>
+    <ng-container matColumnDef="vendors">
+      <th mat-header-cell *matHeaderCellDef>vendors</th>
+      <td mat-cell *matCellDef="let item">{{ item.sell.vendors }}</td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+  </table>
+</div>

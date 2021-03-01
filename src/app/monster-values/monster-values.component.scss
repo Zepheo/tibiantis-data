@@ -1,11 +1,37 @@
+@import "../base-styles/scss-constants.scss";
+
 :host {
-  .side-bar {
-    width: 20%;
-    .monsters {
-      button {
+  display: flex;
+  margin-top: $topbar-height;
+  height: calc(100vh - #{$topbar-height});
+  .content {
+    display: flex;
+    .monster-list {
+      width: 22%;
+      display: flex;
+      flex-direction: column;
+      .search {
         width: 100%;
-        margin: 5px 0;
       }
+      .monsters {
+        overflow-y: scroll;
+        button {
+          width: 100%;
+          margin: 5px 0;
+        }
+      }
+    }
+
+    .settings-button {
+      position: absolute;
+      top: $topbar-height;
+      right: 0;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    app-monster-details {
+      width: 78%;
     }
   }
 }
