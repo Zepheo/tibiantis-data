@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { MatCheckboxChange } from '@angular/material/checkbox';
 import { StorageService } from 'src/app/services/storage.service';
+import { locations as _locations } from 'src/assets/data/locations';
+import { Location } from 'src/types/location';
 
 @Component({
   selector: 'app-monster-values-settings',
@@ -7,12 +10,27 @@ import { StorageService } from 'src/app/services/storage.service';
   styleUrls: ['./monster-values-settings.component.scss'],
 })
 export class MonsterValuesSettingsComponent implements OnInit {
-  excludedVendors: string[];
+  excludedCities: string[];
 
-  constructor(private storage: StorageService) {}
+  get locations(): Location[] {
+    return _locations;
+  }
+
+  constructor(private storageService: StorageService) {}
 
   ngOnInit(): void {
-    this.storage.addExcludedVendor(["Al'dee"]);
-    this.excludedVendors = this.storage.getExcludedVendors();
+    this.excludedCities = this.storageService.getExcludedCities();
+  }
+
+  getIsExcluded(city: Location): boolean {
+    return this.excludedCities.includes(city.name);
+  }
+
+  toggleCity(event: MatCheckboxChange, city: Location): void {
+    if (event.checked) {
+      this.storageService.addExcludedCity(city.name);
+    } else {
+      this.storageService.removeExcludedCity(city.name);
+    }
   }
 }

@@ -1,3 +1,9 @@
 <div class="wrapper">
-  <p *ngFor="let vendor of excludedVendors">{{ vendor }}</p>
+  <ng-container *ngFor="let location of locations">
+    <mat-checkbox
+      [checked]="getIsExcluded(location)"
+      (change)="toggleCity($event, location)"
+      >{{ location.name }}</mat-checkbox
+    >
+  </ng-container>
 </div>

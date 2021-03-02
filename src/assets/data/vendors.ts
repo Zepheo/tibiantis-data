@@ -4,6 +4,10 @@ export const vendors: Vendor[] = [
   {
     name: 'Ahmet',
     vendor: true,
+    location: {
+      x: 33126,
+      y: 32810,
+    },
     buying: [
       {
         id: '3003',
@@ -14,6 +18,10 @@ export const vendors: Vendor[] = [
   {
     name: 'Al Dee',
     vendor: true,
+    location: {
+      x: 32063,
+      y: 32180,
+    },
     buying: [
       {
         id: '3267',
@@ -116,6 +124,10 @@ export const vendors: Vendor[] = [
   {
     name: 'Alesar',
     vendor: true,
+    location: {
+      x: 33048,
+      y: 32621,
+    },
     buying: [
       {
         id: '3297',
@@ -194,6 +206,10 @@ export const vendors: Vendor[] = [
   {
     name: 'Alexander',
     vendor: true,
+    location: {
+      x: 33256,
+      y: 31839,
+    },
     buying: [
       {
         id: '3061',
@@ -212,6 +228,10 @@ export const vendors: Vendor[] = [
   {
     name: 'Azil',
     vendor: true,
+    location: {
+      x: 33217,
+      y: 32431,
+    },
     buying: [
       {
         id: '3361',
@@ -278,6 +298,10 @@ export const vendors: Vendor[] = [
   {
     name: 'Bashira',
     vendor: true,
+    location: {
+      x: 32669,
+      y: 31655,
+    },
     buying: [
       {
         id: '3003',
@@ -288,6 +312,10 @@ export const vendors: Vendor[] = [
   {
     name: 'Beatrice',
     vendor: true,
+    location: {
+      x: 33214,
+      y: 31803,
+    },
     buying: [
       {
         id: '2906',
@@ -338,6 +366,10 @@ export const vendors: Vendor[] = [
   {
     name: 'Billy',
     vendor: true,
+    location: {
+      x: 32037,
+      y: 32205,
+    },
     buying: [
       {
         id: '3600',
@@ -368,6 +400,10 @@ export const vendors: Vendor[] = [
   {
     name: 'Briasol',
     vendor: true,
+    location: {
+      x: 32635,
+      y: 31667,
+    },
     buying: [
       {
         id: '3026',
@@ -402,6 +438,10 @@ export const vendors: Vendor[] = [
   {
     name: 'Cornelia',
     vendor: true,
+    location: {
+      x: 32334,
+      y: 31796,
+    },
     buying: [
       {
         id: '3361',
@@ -468,6 +508,10 @@ export const vendors: Vendor[] = [
   {
     name: 'Dixi',
     vendor: true,
+    location: {
+      x: 32105,
+      y: 32207,
+    },
     buying: [
       {
         id: '3267',
@@ -570,6 +614,10 @@ export const vendors: Vendor[] = [
   {
     name: 'Habdel',
     vendor: true,
+    location: {
+      x: 33225,
+      y: 32434,
+    },
     buying: [
       {
         id: '3286',
@@ -636,6 +684,10 @@ export const vendors: Vendor[] = [
   {
     name: 'Halif',
     vendor: true,
+    location: {
+      x: 33217,
+      y: 32423,
+    },
     buying: [
       {
         id: '3003',
@@ -646,6 +698,10 @@ export const vendors: Vendor[] = [
   {
     name: 'Hanna',
     vendor: true,
+    location: {
+      x: 32407,
+      y: 32219,
+    },
     buying: [
       {
         id: '3026',
@@ -680,6 +736,10 @@ export const vendors: Vendor[] = [
   {
     name: 'Hardek',
     vendor: true,
+    location: {
+      x: 32272,
+      y: 32339,
+    },
     buying: [
       {
         id: '3411',
@@ -786,6 +846,10 @@ export const vendors: Vendor[] = [
   {
     name: 'Haroun',
     vendor: true,
+    location: {
+      x: 33108,
+      y: 32525,
+    },
     buying: [
       {
         id: '3046',
@@ -844,6 +908,10 @@ export const vendors: Vendor[] = [
   {
     name: 'H.L.',
     vendor: true,
+    location: {
+      x: 32643,
+      y: 32212,
+    },
     buying: [
       {
         id: '3264',
@@ -1350,6 +1418,10 @@ export const vendors: Vendor[] = [
   {
     name: 'Humgolf',
     vendor: true,
+    location: {
+      x: 32598,
+      y: 31880,
+    },
     buying: [
       {
         id: '3577',
@@ -1368,6 +1440,10 @@ export const vendors: Vendor[] = [
   {
     name: 'Ishina',
     vendor: true,
+    location: {
+      x: 33231,
+      y: 32423,
+    },
     buying: [
       {
         id: '3026',
@@ -1402,6 +1478,10 @@ export const vendors: Vendor[] = [
   {
     name: 'Iwan',
     vendor: true,
+    location: {
+      x: 33217,
+      y: 31833,
+    },
     buying: [
       {
         id: '3026',
@@ -1436,6 +1516,10 @@ export const vendors: Vendor[] = [
   {
     name: 'Kroox',
     vendor: true,
+    location: {
+      x: 32650,
+      y: 31887,
+    },
     buying: [
       {
         id: '3358',
@@ -1518,6 +1602,10 @@ export const vendors: Vendor[] = [
   {
     name: "Lee'Delle",
     vendor: true,
+    location: {
+      x: 32024,
+      y: 32196,
+    },
     buying: [
       {
         id: '3267',
@@ -1620,6 +1708,10 @@ export const vendors: Vendor[] = [
   {
     name: 'Lily',
     vendor: true,
+    location: {
+      x: 32068,
+      y: 32225,
+    },
     buying: [
       {
         id: '3588',
@@ -1630,6 +1722,10 @@ export const vendors: Vendor[] = [
   {
     name: 'Memech',
     vendor: true,
+    location: {
+      x: 33135,
+      y: 32810,
+    },
     buying: [
       {
         id: '3265',
@@ -1740,6 +1836,10 @@ export const vendors: Vendor[] = [
   {
     name: "Nah'bob",
     vendor: true,
+    location: {
+      x: 33104,
+      y: 32520,
+    },
     buying: [
       {
         id: '3271',
@@ -1830,6 +1930,10 @@ export const vendors: Vendor[] = [
   {
     name: 'Norma',
     vendor: true,
+    location: {
+      x: 32098,
+      y: 32180,
+    },
     buying: [
       {
         id: '3267',
@@ -1932,6 +2036,10 @@ export const vendors: Vendor[] = [
   {
     name: 'Obi',
     vendor: true,
+    location: {
+      x: 32109,
+      y: 32204,
+    },
     buying: [
       {
         id: '3267',
@@ -2034,6 +2142,10 @@ export const vendors: Vendor[] = [
   {
     name: 'Odemara',
     vendor: true,
+    location: {
+      x: 33015,
+      y: 32058,
+    },
     buying: [
       {
         id: '3026',
@@ -2068,6 +2180,10 @@ export const vendors: Vendor[] = [
   {
     name: 'A Prisoner',
     vendor: true,
+    location: {
+      x: 32393,
+      y: 32137,
+    },
     buying: [
       {
         id: '3147',
@@ -2078,6 +2194,10 @@ export const vendors: Vendor[] = [
   {
     name: 'Rachel',
     vendor: true,
+    location: {
+      x: 32343,
+      y: 31828,
+    },
     buying: [
       {
         id: '3034',
@@ -2088,6 +2208,10 @@ export const vendors: Vendor[] = [
   {
     name: 'Romella',
     vendor: true,
+    location: {
+      x: 32913,
+      y: 32117,
+    },
     buying: [
       {
         id: '3265',
@@ -2150,6 +2274,10 @@ export const vendors: Vendor[] = [
   {
     name: 'Rowenna',
     vendor: true,
+    location: {
+      x: 32324,
+      y: 31794,
+    },
     buying: [
       {
         id: '3286',
@@ -2220,6 +2348,10 @@ export const vendors: Vendor[] = [
   {
     name: 'Sam',
     vendor: true,
+    location: {
+      x: 32360,
+      y: 32199,
+    },
     buying: [
       {
         id: '3265',
@@ -2326,6 +2458,10 @@ export const vendors: Vendor[] = [
   {
     name: 'Shanar',
     vendor: true,
+    location: {
+      x: 32657,
+      y: 31655,
+    },
     buying: [
       {
         id: '3562',
@@ -2492,6 +2628,10 @@ export const vendors: Vendor[] = [
   {
     name: 'Tesha',
     vendor: true,
+    location: {
+      x: 33135,
+      y: 32821,
+    },
     buying: [
       {
         id: '3026',
@@ -2526,6 +2666,10 @@ export const vendors: Vendor[] = [
   {
     name: 'Tezila',
     vendor: true,
+    location: {
+      x: 32657,
+      y: 31922,
+    },
     buying: [
       {
         id: '3026',
@@ -2560,6 +2704,10 @@ export const vendors: Vendor[] = [
   {
     name: 'Timur',
     vendor: true,
+    location: {
+      x: 32191,
+      y: 32443,
+    },
     buying: [
       {
         id: '3350',
@@ -2586,6 +2734,10 @@ export const vendors: Vendor[] = [
   {
     name: 'Turvy',
     vendor: true,
+    location: {
+      x: 32414,
+      y: 32177,
+    },
     buying: [
       {
         id: '3265',
@@ -2696,6 +2848,10 @@ export const vendors: Vendor[] = [
   {
     name: 'Uzgod',
     vendor: true,
+    location: {
+      x: 32664,
+      y: 31894,
+    },
     buying: [
       {
         id: '3286',
@@ -2774,6 +2930,10 @@ export const vendors: Vendor[] = [
   {
     name: 'Willard',
     vendor: true,
+    location: {
+      x: 33214,
+      y: 31793,
+    },
     buying: [
       {
         id: '3265',
@@ -2904,6 +3064,10 @@ export const vendors: Vendor[] = [
   {
     name: 'Willie',
     vendor: true,
+    location: {
+      x: 32047,
+      y: 32204,
+    },
     buying: [
       {
         id: '3600',
@@ -2934,6 +3098,10 @@ export const vendors: Vendor[] = [
   {
     name: 'Yaman',
     vendor: true,
+    location: {
+      x: 33045,
+      y: 32620,
+    },
     buying: [
       {
         id: '3048',
@@ -2988,6 +3156,10 @@ export const vendors: Vendor[] = [
   {
     name: 'Yanni',
     vendor: true,
+    location: {
+      x: 32909,
+      y: 32111,
+    },
     buying: [
       {
         id: '3361',
@@ -3038,6 +3210,10 @@ export const vendors: Vendor[] = [
   {
     name: 'Gold',
     vendor: true,
+    location: {
+      x: 33214,
+      y: 31793,
+    },
     buying: [
       {
         id: '3031',
