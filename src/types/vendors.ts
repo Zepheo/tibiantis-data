@@ -1,7 +1,10 @@
 import { Npc } from './npc';
 
-export interface VendorWithPrice extends Vendor {
+export interface VendorWithPrice extends VendorWithLocation {
   price: number;
+}
+export interface VendorWithLocation extends Vendor {
+  closestLocation: string;
 }
 
 export interface Vendor extends Npc {
