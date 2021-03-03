@@ -21,6 +21,10 @@ export class TopMenuComponent implements OnInit {
         title: 'Monster Values',
         path: '/monster-values',
       },
+      {
+        title: 'Monster Table',
+        path: '/monster-table',
+      },
     ];
   }
 }

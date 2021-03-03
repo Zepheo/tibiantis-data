@@ -15,6 +15,11 @@ export class ItemsService {
   }
 
   getItem(id: string): Item {
+    if (!this._items[id]) {
+      return {
+        name: 'Removed Item',
+      };
+    }
     return this._items[id];
   }
 

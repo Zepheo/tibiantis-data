@@ -1,0 +1,13 @@
+@import "../base-styles/scss-constants.scss";
+
+:host {
+  display: flex;
+  margin-top: $topbar-height;
+  height: calc(100vh - #{$topbar-height});
+  .wrapper {
+    width: 100%;
+  }
+  table {
+    width: 100%;
+  }
+}
