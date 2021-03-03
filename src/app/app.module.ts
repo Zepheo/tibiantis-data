@@ -14,12 +14,14 @@ import { MatTableModule } from '@angular/material/table';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatSortModule } from '@angular/material/sort';
 
 import { TopMenuComponent } from './top-menu/top-menu.component';
 import { MonsterValuesComponent } from './monster-values/monster-values.component';
 import { MonsterFilterPipe } from './pipes/monster-filter.pipe';
 import { MonsterDetailsComponent } from './monster-values/monster-details/monster-details.component';
 import { MonsterValuesSettingsComponent } from './monster-values-settings/monster-values-settings.component';
+import { MonsterTableComponent } from './monster-table/monster-table.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +31,7 @@ import { MonsterValuesSettingsComponent } from './monster-values-settings/monste
     MonsterFilterPipe,
     MonsterDetailsComponent,
     MonsterValuesSettingsComponent,
+    MonsterTableComponent,
   ],
   imports: [
     BrowserModule,
@@ -44,6 +47,7 @@ import { MonsterValuesSettingsComponent } from './monster-values-settings/monste
     MatIconModule,
     MatDialogModule,
     MatCheckboxModule,
+    MatSortModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

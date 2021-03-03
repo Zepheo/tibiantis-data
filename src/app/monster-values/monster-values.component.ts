@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { LootTableItem } from 'src/types/lootTable';
-import { Monster } from 'src/types/monster';
+import { Monster, MonsterWithLootValue } from 'src/types/monster';
 import { ItemsService } from '../services/items.service';
 import { MonsterService } from '../services/monster.service';
 import { VendorsService } from '../services/vendors.service';
@@ -14,17 +14,15 @@ import { MonsterValuesSettingsComponent } from '../monster-values-settings/monst
 })
 export class MonsterValuesComponent {
   @Input() search: any;
-  monsters: Monster[];
-  selectedMonster?: Monster;
+  monsters: MonsterWithLootValue[];
+  selectedMonster?: MonsterWithLootValue;
   lootTable?: LootTableItem[];
 
   constructor(
     private monsterService: MonsterService,
-    private vendorService: VendorsService,
-    private itemService: ItemsService,
     private settingsDialog: MatDialog
   ) {
-    this.monsters = this.monsterService.getMonsters();
+    this.monsters = this.monsterService.getMonstersWithLootValues();
   }
 
   openSettings(): void {
@@ -43,13 +41,7 @@ export class MonsterValuesComponent {
       this.lootTable = undefined;
     } else {
       this.selectedMonster = this.monsters.find((m) => m.name === name);
-      this.lootTable = this.selectedMonster?.loot?.map((item) => ({
-        sell: this.vendorService.getVendorsBuyingAtBestValue(item.id),
-        name: this.itemService.getItemName(item.id),
-        dropChance: item.chance / 1000,
-        amount: item.amount,
-        exclude: false,
-      }));
+      this.lootTable = this.selectedMonster?.lootTable;
     }
   }
 }

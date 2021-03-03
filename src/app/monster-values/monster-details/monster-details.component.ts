@@ -22,6 +22,7 @@ export class MonsterDetailsComponent {
   ];
 
   get averageValue(): string {
+    console.log(this.monster);
     const averageValueForItems: number[] = this.loot
       .filter((i) => !i.exclude)
       .map((i) => {

@@ -1,3 +1,5 @@
+import { LootTableItem } from './lootTable';
+
 export interface Monster {
   id?: string;
   name: string;
@@ -8,6 +10,10 @@ export interface Monster {
   arm: number;
   skills: Skill[];
   loot?: MonsterLoot[];
+}
+
+export interface MonsterWithLootValue extends Monster {
+  lootTable?: LootTableItem[];
 }
 
 interface Skill {
