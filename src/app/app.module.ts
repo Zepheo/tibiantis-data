@@ -18,8 +18,8 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { TopMenuComponent } from './top-menu/top-menu.component';
 import { MonsterValuesComponent } from './monster-values/monster-values.component';
 import { MonsterFilterPipe } from './pipes/monster-filter.pipe';
-import { MonsterDetailsComponent } from './monster-values/components/monster-details/monster-details.component';
-import { MonsterValuesSettingsComponent } from './monster-values/components/monster-values-settings/monster-values-settings.component';
+import { MonsterDetailsComponent } from './monster-values/monster-details/monster-details.component';
+import { MonsterValuesSettingsComponent } from './monster-values-settings/monster-values-settings.component';
 
 @NgModule({
   declarations: [

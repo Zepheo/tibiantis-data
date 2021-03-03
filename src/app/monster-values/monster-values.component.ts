@@ -5,7 +5,7 @@ import { Monster } from 'src/types/monster';
 import { ItemsService } from '../services/items.service';
 import { MonsterService } from '../services/monster.service';
 import { VendorsService } from '../services/vendors.service';
-import { MonsterValuesSettingsComponent } from './components/monster-values-settings/monster-values-settings.component';
+import { MonsterValuesSettingsComponent } from '../monster-values-settings/monster-values-settings.component';
 
 @Component({
   selector: 'app-monster-values',
