@@ -1,0 +1,10 @@
+<div mat-dialog-content>
+  <p>Custom value for {{ data.name }}</p>
+  <mat-form-field>
+    <mat-label>Value</mat-label>
+    <input matInput [(ngModel)]="data.value" />
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button [mat-dialog-close]="data.value" cdkFocusInitial>Ok</button>
+</div>

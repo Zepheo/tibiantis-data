@@ -22,6 +22,7 @@ import { MonsterFilterPipe } from './pipes/monster-filter.pipe';
 import { MonsterDetailsComponent } from './monster-values/monster-details/monster-details.component';
 import { MonsterValuesSettingsComponent } from './monster-values-settings/monster-values-settings.component';
 import { MonsterTableComponent } from './monster-table/monster-table.component';
+import { ValueDialogComponent } from './monster-values/monster-details/value-dialog/value-dialog.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { MonsterTableComponent } from './monster-table/monster-table.component';
     MonsterDetailsComponent,
     MonsterValuesSettingsComponent,
     MonsterTableComponent,
+    ValueDialogComponent,
   ],
   imports: [
     BrowserModule,
